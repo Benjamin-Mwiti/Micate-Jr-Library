@@ -4,9 +4,9 @@ import AppBar from '@material-ui/core/AppBar';
 function Content() {
     return (
         <div>
-            <AppBar backgroundColor="primary">
+            {/* <AppBar backgroundColor="primary">
                 <h1>Content</h1>
-            </AppBar>
+            </AppBar> */}
             <h1>Content</h1>
         </div>
     )

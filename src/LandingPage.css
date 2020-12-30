@@ -16,8 +16,9 @@
 .central__container {
     position: relative;
     display: grid;
-    place-items: center;
+    margin: -10vh;
     width: 50%;
+    height: 60vh;
     /* background-color: greenyellow; */
 }
 

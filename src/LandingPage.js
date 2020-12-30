@@ -13,10 +13,10 @@ function LandingPage() {
             <div className="central__container">
                 <Box className="landingPage__title">
                     <LocalLibraryRoundedIcon className="LocalLibraryRoundedIcon" style={{fontSize: 140}} />
-                        <Typography className="landingPage__intro">
-                            <h1>Micate Jr Library</h1>
-                            <span>Add and edit books, write notes</span>
-                        </Typography>
+                    <Typography className="landingPage__intro">
+                        <h1>Micate Jr Library</h1>
+                        <span>Add and edit books, write notes</span>
+                    </Typography>
                 </Box>
                 <img src={jez_timms_8muUTAmcWU4_unsplash2} alt="Turned on desk lamp beside a pile of books" className="landingPage__image"/>
                 <Router>
