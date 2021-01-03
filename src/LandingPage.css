@@ -62,24 +62,8 @@ a {
     margin: auto;
 }
 
-.landingPage__arrow {
-    color: white;
-    transform: translateY(0);
-    z-index: 10;
-    cursor: pointer;
-
-    transition: color 250ms ease-in,
-                transform 250ms ease-in;
-}
-
-.landingPage__arrow:hover {
-    color: aqua;
-    transform: translateY(10%);
-}
-
 .MuiButton-label {
     font-size: 20px;
-    text-transform: initial;
 }
 
 .MuiButton-outlinedPrimary {

@@ -35,7 +35,7 @@ function LandingPage() {
                 </Box>
                 <img src={jez_timms_8muUTAmcWU4_unsplash2} alt="Turned on desk lamp beside a pile of books" className="landingPage__image"/>
                 <ThemeProvider theme={Theme}>
-                    <Button variant="outlined" color="secondary">Go to Library</Button>
+                    <Button variant="outlined" color="secondary">To the Library</Button>
                 </ThemeProvider>
                 <Router>
                     <Route path="/Library" component={Library}>
