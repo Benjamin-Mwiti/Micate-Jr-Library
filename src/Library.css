@@ -1,0 +1,16 @@
+.library {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.library > .appBar {
+    position: fixed;
+    display: flex;
+    background-color: #00bfff;
+    width: 100%;
+    padding: 30px;
+}
+.navigation {
+    position: relative;
+    display: flex;
+}

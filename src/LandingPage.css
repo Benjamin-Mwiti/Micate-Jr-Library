@@ -16,9 +16,10 @@
 .central__container {
     position: relative;
     display: grid;
-    margin: -10vh;
+    place-items: center;
     width: 50%;
     height: 60vh;
+    transform: translateY(-20%);
     /* background-color: greenyellow; */
 }
 
@@ -75,6 +76,19 @@ a {
     color: aqua;
     transform: translateY(10%);
 }
+
+.MuiButton-label {
+    font-size: 20px;
+    text-transform: initial;
+}
+
+.MuiButton-outlinedPrimary {
+    color: white;
+}
+
+.MuiButton-root {}
+
+.MuiButtonBase-root {}
 
 .left__container {
     position: relative;
