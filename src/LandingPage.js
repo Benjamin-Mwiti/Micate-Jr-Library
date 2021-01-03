@@ -41,11 +41,6 @@ function LandingPage() {
                     <Route path="/Library" component={Library}>
                     </Route>
                 </Router>
-                {/* <Router>
-                    <Route path="">
-                        <ExpandMoreIcon className="landingPage__arrow" style={{fontSize: 70}} />
-                    </Route>
-                </Router> */}
             </div>
             <div className="right__container"></div>
         </div>
