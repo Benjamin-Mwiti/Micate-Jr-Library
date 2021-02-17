@@ -27,6 +27,8 @@ const useStyles = makeStyles({
     }
 });
 
+const Transition = () => {};
+
 function LandingPage() {
     
     const classStyles = useStyles();
@@ -38,7 +40,7 @@ function LandingPage() {
                 <Box className="landingPage__title">
                     <LocalLibraryRoundedIcon className="LocalLibraryRoundedIcon" style={{fontSize: 140}} />
                     <Typography className="landingPage__intro">
-                        <h1>Micate Jr Library</h1>
+                        <h1>Study Room</h1>
                         <span>Simple library to study and write notes on the Web</span>
                     </Typography>
                 </Box>
