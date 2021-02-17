@@ -4,7 +4,7 @@ import Library from './Library'
 import jez_timms_8muUTAmcWU4_unsplash2 from './images/jez_timms_8muUTAmcWU4_unsplash2.jpg';
 import { Box, Typography, Button } from '@material-ui/core';
 import LocalLibraryRoundedIcon from '@material-ui/icons/LocalLibraryRounded';
-import { createMuiTheme, ThemeProvider  } from '@material-ui/core/styles';
+import { createMuiTheme, makeStyles, ThemeProvider  } from '@material-ui/core/styles';
 import {BrowserRouter as Router, Route, NavLink, Link} from 'react-router-dom';
 
 const Theme = createMuiTheme({
@@ -21,7 +21,16 @@ const Theme = createMuiTheme({
     }
 });
 
+const useStyles = makeStyles({
+    links: {
+        textDecorationColor: 'none'
+    }
+});
+
 function LandingPage() {
+    
+    const classStyles = useStyles();
+
     return (
         <div className="landingPage">
             <div className="left__container"></div>
@@ -37,7 +46,7 @@ function LandingPage() {
                 <Router>
                     <NavLink to="/Library">
                         <ThemeProvider theme={Theme}>
-                            <Button variant="outlined" color="secondary">To the Library</Button>
+                            <Button className={classStyles.links} variant="outlined" color="secondary">To the Library</Button>
                         </ThemeProvider>
                     </NavLink>
                     <Route path="/Library" component={Library}>
