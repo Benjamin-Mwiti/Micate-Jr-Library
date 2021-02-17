@@ -5,7 +5,7 @@ import jez_timms_8muUTAmcWU4_unsplash2 from './images/jez_timms_8muUTAmcWU4_unsp
 import { Box, Typography, Button } from '@material-ui/core';
 import LocalLibraryRoundedIcon from '@material-ui/icons/LocalLibraryRounded';
 import { createMuiTheme, ThemeProvider  } from '@material-ui/core/styles';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Route, NavLink, Link} from 'react-router-dom';
 
 const Theme = createMuiTheme({
     palette: {
@@ -34,10 +34,12 @@ function LandingPage() {
                     </Typography>
                 </Box>
                 <img src={jez_timms_8muUTAmcWU4_unsplash2} alt="Turned on desk lamp beside a pile of books" className="landingPage__image"/>
-                <ThemeProvider theme={Theme}>
-                    <Button variant="outlined" color="secondary">To the Library</Button>
-                </ThemeProvider>
                 <Router>
+                    <NavLink to="/Library">
+                        <ThemeProvider theme={Theme}>
+                            <Button variant="outlined" color="secondary">To the Library</Button>
+                        </ThemeProvider>
+                    </NavLink>
                     <Route path="/Library" component={Library}>
                     </Route>
                 </Router>
