@@ -30,6 +30,11 @@ const useStyles = makeStyles({
 
 const Transition = () => {};
 
+$(function() {
+    $('h1').text("Study Bay");
+    $('.MuiSvgIcon-root').css('color', '#00bfff');
+});
+
 const landingPageButton = () => (
         <Link to="/Library">
             <Button /* className={classStyles.links} */ variant="outlined" color="secondary">To the Library</Button>
