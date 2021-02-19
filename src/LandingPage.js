@@ -6,6 +6,7 @@ import { Box, Typography, Button } from '@material-ui/core';
 import LocalLibraryRoundedIcon from '@material-ui/icons/LocalLibraryRounded';
 import { createMuiTheme, makeStyles, ThemeProvider  } from '@material-ui/core/styles';
 import {BrowserRouter as Router, Route, NavLink, Link} from 'react-router-dom';
+// import jQuery from 'file:///D:/Benjamin/Web%20Development%20Codes/Git/Websites/micate-jr-library/src/jquery-3.5.1.min.js';
 
 const Theme = createMuiTheme({
     palette: {
@@ -46,11 +47,15 @@ function LandingPage() {
                 </Box>
                 <img src={jez_timms_8muUTAmcWU4_unsplash2} alt="Turned on desk lamp beside a pile of books" className="landingPage__image"/>
                 <Router>
-                    <NavLink to="/Library">
-                        <ThemeProvider theme={Theme}>
-                            <Button className={classStyles.links} variant="outlined" color="secondary">To the Library</Button>
-                        </ThemeProvider>
-                    </NavLink>
+                    {/* <NavLink to="/Library" onClick={() => {preventDefault()}}>
+                        <ThemeProvider theme={Theme}> */}
+                        <Route path="/Library" component={Library}>
+                            <Link to="/Library">
+                                <Button className={classStyles.links} variant="outlined" color="secondary">To the Library</Button>
+                            </Link>
+                        </Route>
+                        {/* </ThemeProvider>
+                    </NavLink> */}
                     <Route path="/Library" component={Library}>
                     </Route>
                 </Router>
