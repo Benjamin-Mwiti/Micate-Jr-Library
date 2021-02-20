@@ -60,6 +60,7 @@ a {
     position: relative;
     display: flex;
     margin: auto;
+    text-decoration: none;
 }
 
 .MuiButton-label {
