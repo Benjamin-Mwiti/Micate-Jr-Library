@@ -28,8 +28,8 @@ const useStyles = makeStyles({
 });
 
 $(function() {
-    $('h1').text("Study Bay");
-    $('.MuiSvgIcon-root').css('color', '#00bfff');
+    /* $('h1').text("Study Bay");
+    $('.MuiSvgIcon-root').css('color', '#00bfff'); */
     $('.MuiButton-root').click(() => {
         $('.landingPage').slideToggle(1000);
         // $('.landingPage').slideToggle(2000);
