@@ -33,6 +33,11 @@ const Transition = () => {};
 $(function() {
     $('h1').text("Study Bay");
     $('.MuiSvgIcon-root').css('color', '#00bfff');
+    $('.MuiButton-root').click(() => {
+        $('.landingPage').slideToggle(1000);
+        $('.landingPage').slideToggle(2000);
+        // $('.landingPage').show();
+    });
 });
 
 const landingPageButton = () => (
@@ -60,9 +65,12 @@ function LandingPage() {
                 <Router>
                     {/* <NavLink to="/Library" onClick={() => {preventDefault()}}>
                         <ThemeProvider theme={Theme}> */}
-                        <landingPageButton />
+                        <Link to="/Library">
+                            <Button /* className={classStyles.links} */ variant="outlined" color="secondary">To the Library</Button>
+                        </Link>
+                        {/* <landingPageButton />
                         <Route path="/Library" component={landingPageButton} />
-                        <Route path="/Library" component={Library} />
+                        <Route path="/Library" component={Library} /> */}
                         {/* </ThemeProvider>
                     </NavLink> */}
                     <Route path="/Library" component={Library}>
