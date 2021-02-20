@@ -1,5 +1,13 @@
-import { Button } from '@material-ui/core';
 import React from 'react';
+import { Button } from '@material-ui/core';
+import LandingPage from './LandingPage';
+import $ from 'jquery';
+
+$(function() {
+    $('.MuiButton-root').click(() => {
+        $('.library').slideUp(1000);
+    });
+});
 
 function Library() {
     return (
